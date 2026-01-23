@@ -10,7 +10,7 @@
     <header>
       <div class="container">
         <div class="header-container">
-          <img src="../images/logo.svg" alt="logotype" />
+          <img src="./images/logo.svg" alt="logotype" />
           <nav class="header-nav">
             <ul class="nav-menu">
               <li><a class="link" href="#about-section">About Us</a></li>
@@ -22,7 +22,21 @@
             </ul>
           </nav>
           <div class="socials">
-            <!-- svg icons -->
+            <a href="tel:+ 38 (096) 000 00 07">
+              <svg width="32" height="32" class="socials-icon">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </a>
+            <a href="#">
+              <svg width="32" height="32" class="socials-icon">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+            <a href="#">
+              <svg width="32" height="32" class="socials-icon">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
           </div>
         </div>
       </div>
@@ -52,14 +66,14 @@
               </h2>
 
               <p>
-                Наша косметологічна клініка пропонує вам професійні послуги з
-                догляду за шкірою обличчя та тіла.
+                Our cosmetology clinic provides you with professional services
+                from I'll look behind the skin and reveal the body.
               </p>
               <p>
-                B <strong>Beauty Zone</strong> ми гарантуємо найвищі стандарти
-                якості та приємний сервіс. Наші косметологічні процедури та
-                препарати допоможуть вам підтримувати свою красу та молодість. З
-                нами краса назавжди!
+                At Beauty Zone we guarantee the highest standards of quality and
+                pleasant service. Our cosmetic procedures and preparations will
+                help you maintain your beauty and youth. With us, beauty is
+                forever!
               </p>
             </div>
             <div class="results">
@@ -75,46 +89,85 @@
       </section>
       <section id="advantages-section" class="advantages-section">
         <div class="container">
-          <h2 class="section-title">
+          <h2 class="section-title centered advantages-title">
             Why people <br />
             <span>choose us</span>
           </h2>
-          <article>
-            <!-- svg icon -->
-            <p>
-              All our cosmetologists have higher medical education and 5 years
-              of work experience
-            </p>
-          </article>
-          <article>
-            <!-- svg icon -->
-            <p>
-              Використовуємо тільки професійне обладнання та косметику,
-              перевірену часом
-            </p>
-          </article>
-          <article>
-            <!-- svg icon -->
-            <p>
-              Наша мета - підкреслити переваги та приховати недоліки, а не
-              переробити
-            </p>
-          </article>
+          <ul class="advantages-list">
+            <li class="advantages-item">
+              <article class="advantages-card">
+                <svg width="50px" height="50px" class="card-icon">
+                  <use href="./images/icons.svg#icon-safe"></use>
+                </svg>
+                <p>
+                  All our cosmetologists have higher medical education and 5
+                  years of work experience
+                </p>
+              </article>
+            </li>
+            <li class="advantages-item">
+              <article class="advantages-card">
+                <svg width="50px" height="50px" class="card-icon">
+                  <use href="./images/icons.svg#icon-product"></use>
+                </svg>
+                <p>
+                  We use only professional equipment and time-tested cosmetics.
+                </p>
+              </article>
+            </li>
+            <li class="advantages-item">
+              <article class="advantages-card">
+                <svg width="50px" height="50px" class="card-icon">
+                  <use href="./images/icons.svg#icon-crown"></use>
+                </svg>
+                <p>
+                  Our goal is to emphasize the advantages and hide the
+                  disadvantages, not to remake
+                </p>
+              </article>
+            </li>
+          </ul>
         </div>
       </section>
+      <img src="./images/advantages-bg.svg" alt="bg" class="advantages-bg" />
       <section id="procedures-section" class="procedures-section">
         <div class="container">
-          <h2 class="section-title">Our <span>procedures</span></h2>
-          <article>
-            <p>Face masks</p>
-          </article>
-          <article></article>
-          <article></article>
+          <h2 class="section-title centered">Our <span>procedures</span></h2>
+          <button type="button" class="slider-btn">
+            <svg width="16" height="16" class="slider-arrow">
+              <use href="./images/icons.svg#icon-arrow-left"></use>
+            </svg>
+          </button>
+          <ul class="procedures-slider">
+            <li>
+              <article class="procedures-card">
+                <p class="card-text">Face <br />masks</p>
+              </article>
+            </li>
+            <li>
+              <article class="procedures-card">
+                <p class="card-text">Injections <br />for the face</p>
+              </article>
+            </li>
+            <li>
+              <article class="procedures-card">
+                <p class="card-text">
+                  Facial <br />
+                  cleansing
+                </p>
+              </article>
+            </li>
+          </ul>
+          <button type="button" class="slider-btn">
+            <svg width="16" height="16" class="slider-arrow">
+              <use href="./images/icons.svg#icon-arrow-right"></use>
+            </svg>
+          </button>
         </div>
       </section>
       <section id="contacts-section" class="contacts-section">
         <div class="container">
-          <h2 class="section-title">How to <span>find us</span></h2>
+          <h2 class="section-title centered">How to <span>find us</span></h2>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.4756098574007!2d30.772648476495373!3d50.5067167833109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d97de411b701%3A0x48116b28f7f00d94!2z0YPQuy4g0KLQsNGA0LDRgdCwINCo0LXQstGH0LXQvdC60L4sIDUsINCR0YDQvtCy0LDRgNGLLCDQmtC40LXQstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCAwNzQwMA!5e0!3m2!1sru!2sua!4v1768898022516!5m2!1sru!2sua"
             width="605"
@@ -129,28 +182,54 @@
       <footer>
         <div class="container">
           <img src="./images/logo.svg" alt="logo" />
-          <nav>
+          <nav class="footer-nav">
             <ul>
-              <li>About Us</li>
-              <li>Why us?</li>
-              <li>Our procedures</li>
-              <li>Contacts</li>
+              <li class="link footer-link">About Us</li>
+              <li class="link footer-link">Why us?</li>
+              <li class="link footer-link">Our procedures</li>
+              <li class="link footer-link">Contacts</li>
             </ul>
           </nav>
           <address>
             <ul>
               <li>
-                <a href="tel:+ 38 (096) 000 00 07">+ 38 (096) 000 00 07</a>
+                <a class="adress-link" href="tel:+ 38 (096) 000 00 07"
+                  >+ 38 (096) 000 00 07</a
+                >
               </li>
               <li>
-                <a href="mail:beautyzone@gmail.com">beautyzone@gmail.com</a>
+                <a class="adress-link" href="mail:beautyzone@gmail.com"
+                  >beautyzone@gmail.com</a
+                >
               </li>
               <li>
                 <a
+                  class="adress-link"
                   href="https://maps.app.goo.gl/YBw5wxRqRC4p2pFAA"
                   target="_blank"
                   >Україна, м. Київ, вул. Тараса Шевченка 5</a
                 >
+              </li>
+              <li>
+                <a href="tel:+ 38 (096) 000 00 07">
+                  <svg width="32" height="32" class="socials-icon footer-icon">
+                    <use href="./images/icons.svg#icon-phone"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg width="32" height="32" class="socials-icon footer-icon">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg width="32" height="32" class="socials-icon footer-icon">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
           </address>
