@@ -95,6 +95,11 @@ li {
   list-style: none;
 }
 
+span.underline {
+  color: var(--fifth-color);
+  text-decoration: underline;
+}
+
 /* Buttons */
 
 .btn {
@@ -129,6 +134,7 @@ li {
 
 header {
   background: #ffffff40;
+  height: 106px;
 }
 
 .header-container {
@@ -173,7 +179,7 @@ header {
 
 .hero-section {
   background-image: url(./images/hero-background.png);
-  background-position: center;
+  background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -187,6 +193,11 @@ header {
 
 /* About-section */
 
+.about-section {
+  background-color: transparent;
+  position: relative;
+}
+
 .about-text {
   max-width: 710px;
   line-height: 1.7;
@@ -194,9 +205,46 @@ header {
   margin-top: 50px;
 }
 
-.before,
-.after {
+.before img,
+.after img {
   border-radius: 50%;
+  position: relative;
+}
+
+.before::after {
+  content: "";
+  background-image: url(./images/first-star.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  bottom: 280px;
+  right: 320px;
+}
+
+.before::before {
+  content: "";
+  background-image: url(./images/third-star.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 20px;
+  right: -20px;
+}
+
+.after::after {
+  content: "";
+  background-image: url(./images/second-star.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  bottom: 400px;
+  right: 40px;
 }
 
 .about-container {
@@ -209,13 +257,14 @@ header {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  position: relative;
 }
 
-.results img:first-child {
+.before {
   align-self: flex-start;
 }
 
-.results img:last-child {
+.after {
   align-self: flex-end;
 }
 
@@ -224,6 +273,12 @@ header {
 .advantages-section {
   padding-bottom: 100px;
   padding-top: 100px;
+}
+
+.advantages-title {
+  text-align: center;
+  max-width: 430px;
+  margin: 0 auto;
 }
 
 .advantages-bg {
@@ -236,6 +291,7 @@ header {
 .advantages-list {
   display: flex;
   gap: 56px;
+  justify-content: center;
 }
 
 .advantages-card {
@@ -289,6 +345,7 @@ header {
   display: flex;
   justify-content: center;
   gap: 16px;
+  padding: 0;
 }
 
 .slider-btn {
@@ -302,6 +359,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 
   fill: var(--sith-color);
 
@@ -313,6 +371,41 @@ header {
   fill: var(--first-color);
 }
 
+.procedures-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+/* Contact-section */
+
+.contact-container {
+  display: flex;
+  gap: 32px;
+}
+
+.contact-form {
+  padding: 48px 56px;
+  background-image: url(./images/contact-form-bg.png);
+  background-color: var(--third-color);
+  border-radius: 32px;
+  color: var(--first-color);
+  text-align: center;
+}
+
+.form-title {
+  font-size: 22px;
+  max-width: 204px;
+  margin: 0 auto;
+}
+
+.contact-text {
+  font-size: 12px;
+  max-width: 160px;
+  margin: 0 auto;
+}
+
 /* Footer */
 
 footer {
@@ -322,6 +415,11 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+footer ul {
+  margin: 0;
+  padding: 0;
 }
 
 .footer-icon {
@@ -343,4 +441,24 @@ footer {
 
 .adress-link:hover {
   color: var(--second-color);
+}
+
+.footer-container {
+  display: flex;
+}
+
+.footer-logo {
+  flex-grow: 1;
+}
+
+.footer-nav {
+  flex-grow: 1;
+}
+
+.footer-adress {
+  flex-grow: 1;
+}
+
+.adress-info {
+  flex-grow: 1;
 }
