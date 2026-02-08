@@ -1,0 +1,22 @@
+:root {
+  --first-color: #fff;
+  --second-color: #2b7fff;
+  --third-color: #011c44;
+  --fourth-color: #4f4f4f;
+  --fifth-color: #747272;
+  --sith-color: #011f4a;
+  --seveth-colo: #ffd02b;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+  color: #011c44;
+  line-height: 1.5;
+}
+
+html {
+  scroll-behavior: smooth;
+}

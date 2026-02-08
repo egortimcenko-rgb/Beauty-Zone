@@ -1,0 +1,10 @@
+.link {
+  transition: 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--third-color);
+}
+
+.link:hover {
+  color: var(--second-color);
+}

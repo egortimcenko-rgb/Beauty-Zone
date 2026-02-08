@@ -1,0 +1,31 @@
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 32px 0 56px 0;
+}
+
+.section-title {
+  font-size: 64px;
+  font-family: "Play", sans-serif;
+  margin-top: 0;
+
+  line-height: 1.2;
+}
+
+.section-title.centered {
+  text-align: center;
+}
+
+span {
+  color: var(--second-color);
+}
+
+li {
+  list-style: none;
+}
+
+span.underline {
+  color: var(--fifth-color);
+  text-decoration: underline;
+}

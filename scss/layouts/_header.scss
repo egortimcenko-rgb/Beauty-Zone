@@ -1,0 +1,36 @@
+header {
+  background: #ffffff40;
+  height: 106px;
+}
+
+.header-container {
+  display: flex;
+  gap: 240px;
+}
+
+.header-nav {
+  flex-grow: 1;
+}
+
+.nav-menu {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.socials-icon {
+  transition: 0.3s;
+  fill: var(--sith-color);
+}
+
+.socials-icon:hover {
+  fill: var(--second-color);
+}

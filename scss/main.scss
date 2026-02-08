@@ -1,0 +1,18 @@
+@import "./utils/variables";
+@import "./utils/fonts";
+@import "./utils/utils";
+@import "./utils/base";
+
+@import "./layouts/header";
+@import "./layouts/footer";
+@import "./layouts/modal";
+
+@import "./components/buttons";
+@import "./components/links";
+@import "./components/form";
+
+@import "./sections/hero-section";
+@import "./sections/about-section";
+@import "./sections/advantages-section";
+@import "./sections/procedures-section";
+@import "./sections/contact-section";

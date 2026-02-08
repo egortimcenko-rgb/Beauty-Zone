@@ -1,0 +1,39 @@
+.contact-container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.contact-form-title {
+  font-size: 22px;
+  max-width: 190px;
+  margin: 0 auto 32px auto;
+  text-align: center;
+}
+
+.contact-form {
+  padding: 48px 56px;
+  background-image: url(./images/contact-form-bg.png);
+  background-color: var(--third-color);
+  border-radius: 32px;
+  color: var(--first-color);
+  max-width: 422px;
+  max-height: 482px;
+}
+
+.contact-text {
+  font-size: 12px;
+  max-width: 160px;
+  margin: 0 auto;
+}
+
+.contact-map {
+  flex-shrink: 1;
+  border-radius: 42px;
+  width: 100%;
+}
+
+.contact-number-format {
+  margin-left: 10px;
+  font-size: 12px;
+}

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>Beauty Zone</title>
   </head>
   <body>
@@ -12,7 +12,9 @@
         <header>
           <div class="container">
             <div class="header-container">
-              <img src="./images/logo.svg" alt="logotype" />
+              <a href="./index.html">
+                <img src="./images/logo.svg" alt="logotype" />
+              </a>
               <nav class="header-nav">
                 <ul class="nav-menu">
                   <li><a class="link" href="#about-section">About Us</a></li>
@@ -53,7 +55,7 @@
             Beauty <br />
             Zone
           </h1>
-          <button type="button" class="btn">Order a call</button>
+          <button type="button" class="btn modal-btn-open">Order a call</button>
           <p class="hero-text">
             Sign up and get a free <br />
             consultation from our cosmetologist
@@ -103,6 +105,7 @@
                 <svg width="50px" height="50px" class="card-icon">
                   <use href="./images/icons.svg#icon-safe"></use>
                 </svg>
+                <h3 class="hidden">Qualified specialists</h3>
                 <p>
                   All our cosmetologists have higher medical education and 5
                   years of work experience
@@ -114,6 +117,7 @@
                 <svg width="50px" height="50px" class="card-icon">
                   <use href="./images/icons.svg#icon-product"></use>
                 </svg>
+                <h3 class="hidden">Professional equipment</h3>
                 <p>
                   We use only professional equipment and time-tested cosmetics.
                 </p>
@@ -124,6 +128,7 @@
                 <svg width="50px" height="50px" class="card-icon">
                   <use href="./images/icons.svg#icon-crown"></use>
                 </svg>
+                <h3 class="hidden">Honest approach</h3>
                 <p>
                   Our goal is to emphasize the advantages and hide the
                   disadvantages, not to remake
@@ -146,20 +151,35 @@
             <ul class="procedures-slider">
               <li>
                 <article class="procedures-card">
-                  <p class="card-text">Face <br />masks</p>
+                  <img
+                    src="./images/face-masks.jpg"
+                    alt="face masks"
+                    class="card-image"
+                  />
+                  <h3 class="card-text">Face <br />masks</h3>
                 </article>
               </li>
               <li>
                 <article class="procedures-card">
-                  <p class="card-text">Injections <br />for the face</p>
+                  <img
+                    src="./images/injections.jpg"
+                    alt="injections for the face"
+                    class="card-image"
+                  />
+                  <h3 class="card-text">Injections <br />for the face</h3>
                 </article>
               </li>
               <li>
                 <article class="procedures-card">
-                  <p class="card-text">
+                  <img
+                    src="./images/cleansing.png"
+                    alt="facial cleansing"
+                    class="card-image"
+                  />
+                  <h3 class="card-text">
                     Facial <br />
                     cleansing
-                  </p>
+                  </h3>
                 </article>
               </li>
             </ul>
@@ -176,23 +196,58 @@
           <h2 class="section-title centered">How to <span>find us</span></h2>
           <div class="contact-container">
             <iframe
-              class="map"
+              class="contact-map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.4756098574007!2d30.772648476495373!3d50.5067167833109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d97de411b701%3A0x48116b28f7f00d94!2z0YPQuy4g0KLQsNGA0LDRgdCwINCo0LXQstGH0LXQvdC60L4sIDUsINCR0YDQvtCy0LDRgNGLLCDQmtC40LXQstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCAwNzQwMA!5e0!3m2!1sru!2sua!4v1768898022516!5m2!1sru!2sua"
-              width="605"
-              height="480"
               style="border: 0"
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
             <div class="contact-form">
-              <h3 class="form-title">
+              <h3 class="contact-form-title">
                 Sign up for <span>free</span> and get a gift
               </h3>
-              <button type="button" class="btn">Sign up for free</button>
-              <p class="contact-text">
-                By clicking the button I agree
-                <span class="underline"> to the privacy policy</span>
+              <form name="contact-form" autocomplete="off">
+                <div class="form-item">
+                  <input
+                    type="text"
+                    class="form-input"
+                    name="user-name"
+                    placeholder="Name"
+                    required
+                  />
+                </div>
+                <div class="form-item">
+                  <input
+                    type="tel"
+                    class="form-input"
+                    name="user-number"
+                    placeholder="Phone number"
+                    pattern="^\+380[1-9]{7,}"
+                    required
+                  />
+                  <span class="contact-number-format"
+                    >Number format: +380ххххххх</span
+                  >
+                </div>
+                <div class="form-item">
+                  <input
+                    type="email"
+                    class="form-input"
+                    name="user-email"
+                    placeholder="Email"
+                    required
+                  />
+                </div>
+
+                <button type="submit" class="btn form-btn">
+                  Sign up for free
+                </button>
+              </form>
+
+              <p class="terms">
+                By clicking the button I agree to
+                <a href="#">the privacy policy</a>
               </p>
             </div>
           </div>
@@ -202,14 +257,30 @@
         <div class="container">
           <div class="footer-container">
             <div class="footer-logo">
-              <img src="./images/logo.svg" alt="logo" />
+              <a href="#">
+                <img src="./images/logo.svg" alt="logo" />
+              </a>
             </div>
             <nav class="footer-nav">
-              <ul>
-                <li class="link footer-link">About Us</li>
-                <li class="link footer-link">Why us?</li>
-                <li class="link footer-link">Our procedures</li>
-                <li class="link footer-link">Contacts</li>
+              <ul class="nav-list">
+                <li>
+                  <a class="link footer-link" href="#about-section">About Us</a>
+                </li>
+                <li>
+                  <a class="link footer-link" href="#advantages-section"
+                    >Why us?</a
+                  >
+                </li>
+                <li>
+                  <a class="link footer-link" href="#procedures-section"
+                    >Our procedures</a
+                  >
+                </li>
+                <li>
+                  <a class="link footer-link" href="#contacts-section"
+                    >Contacts</a
+                  >
+                </li>
               </ul>
             </nav>
             <address class="footer-adress">
@@ -234,47 +305,99 @@
                   >
                 </li>
                 <li>
-                  <a href="tel:+380960000007">
-                    <svg
-                      width="32"
-                      height="32"
-                      class="socials-icon footer-icon"
-                    >
-                      <use href="./images/icons.svg#icon-phone"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <svg
-                      width="32"
-                      height="32"
-                      class="socials-icon footer-icon"
-                    >
-                      <use href="./images/icons.svg#icon-facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <svg
-                      width="32"
-                      height="32"
-                      class="socials-icon footer-icon"
-                    >
-                      <use href="./images/icons.svg#icon-instagram"></use>
-                    </svg>
-                  </a>
+                  <div class="socials">
+                    <a href="tel:+380960000007">
+                      <svg
+                        width="32"
+                        height="32"
+                        class="socials-icon footer-icon"
+                      >
+                        <use href="./images/icons.svg#icon-phone"></use>
+                      </svg>
+                    </a>
+
+                    <a href="#">
+                      <svg
+                        width="32"
+                        height="32"
+                        class="socials-icon footer-icon"
+                      >
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+
+                    <a href="#">
+                      <svg
+                        width="32"
+                        height="32"
+                        class="socials-icon footer-icon"
+                      >
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </div>
                 </li>
               </ul>
             </address>
             <ul class="adress-info">
-              <li>Політика конфіденційності</li>
-              <li>&copy; 2022 Дані захищені</li>
+              <li>
+                <a class="link" href="#"> Privacy policy </a>
+              </li>
+              <li><span class="terms">&copy; 2026 data protected</span></li>
             </ul>
           </div>
         </div>
       </footer>
+
+      <div class="backdrop is-hidden">
+        <div class="modal">
+          <button type="button" class="modal-btn-close">
+            <svg width="32" height="32" class="modal-exit">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <h2 class="form-title">Request a call</h2>
+          <p class="form-text">Sign up for <span>free</span> and get a gift</p>
+          <form name="contact-form" autocomplete="off">
+            <div class="form-item">
+              <input
+                type="text"
+                class="form-input"
+                name="user-name"
+                placeholder="Name"
+                required
+              />
+            </div>
+            <div class="form-item">
+              <input
+                type="tel"
+                class="form-input"
+                name="user-number"
+                placeholder="Phone number"
+                pattern="^\+380[1-9]{7,}"
+                required
+              />
+              <span class="number-format">Number format: +380ххххххх</span>
+            </div>
+            <div class="form-item">
+              <input
+                type="email"
+                class="form-input"
+                name="user-email"
+                placeholder="Email"
+                required
+              />
+            </div>
+
+            <button type="submit" class="btn form-btn">Sign up for free</button>
+          </form>
+
+          <p class="terms">
+            By clicking the button I agree to <a href="#">the privacy policy</a>
+          </p>
+        </div>
+      </div>
     </main>
+    <script src="./JS/modal.js"></script>
   </body>
 </html>

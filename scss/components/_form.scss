@@ -1,0 +1,40 @@
+.form-item {
+  margin-bottom: 24px;
+}
+
+.form-input {
+  display: block;
+  margin: 0 auto;
+  width: 310px;
+
+  border: 2px solid var(--fourth-color);
+  border-radius: 48px;
+  padding: 18px 32px;
+
+  background-color: transparent;
+  color: var(--first-color);
+}
+
+.form-input:focus {
+  background-color: var(--fourth-color);
+  outline: none;
+}
+
+.form-input::placeholder {
+  color: #fff;
+}
+
+.form-btn {
+  width: 200px;
+  margin: 0 auto 10px auto;
+  display: block;
+}
+
+.form-btn:hover {
+  color: var(--first-color);
+}
+
+.number-format {
+  margin-left: 190px;
+  font-size: 12px;
+}
