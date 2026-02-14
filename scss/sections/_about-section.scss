@@ -1,74 +1,74 @@
 .about-section {
   background-color: transparent;
   position: relative;
-}
 
-.about-text {
-  max-width: 710px;
-  line-height: 1.7;
+  &__text {
+    max-width: 710px;
+    line-height: 1.7;
 
-  margin-top: 50px;
-}
+    margin-top: 50px;
+  }
 
-.before img,
-.after img {
-  border-radius: 50%;
-  position: relative;
-}
+  &__before img,
+  &__after img {
+    border-radius: 50%;
+    position: relative;
+  }
 
-.before::after {
-  content: "";
-  background-image: url(./images/first-star.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 64px;
-  height: 64px;
-  position: absolute;
-  bottom: 280px;
-  right: 320px;
-}
+  &__before::after {
+    content: "";
+    background-image: url(../images/first-star.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    bottom: 280px;
+    right: 320px;
+  }
 
-.before::before {
-  content: "";
-  background-image: url(./images/third-star.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  top: 20px;
-  right: -20px;
-}
+  &__before::before {
+    content: "";
+    background-image: url(../images/third-star.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    right: -20px;
+  }
 
-.after::after {
-  content: "";
-  background-image: url(./images/second-star.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 16px;
-  height: 16px;
-  position: absolute;
-  bottom: 400px;
-  right: 40px;
-}
+  &__after::after {
+    content: "";
+    background-image: url(../images/second-star.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    bottom: 400px;
+    right: 40px;
+  }
 
-.about-container {
-  display: flex;
-  gap: 32px;
-}
+  &__container {
+    display: flex;
+    gap: 32px;
+  }
 
-.results {
-  width: 500px;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  position: relative;
-}
+  &__results {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    position: relative;
+  }
 
-.before {
-  align-self: flex-start;
-}
+  &__before {
+    align-self: flex-start;
+  }
 
-.after {
-  align-self: flex-end;
+  &__after {
+    align-self: flex-end;
+  }
 }

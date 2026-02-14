@@ -6,3 +6,21 @@
   height: 1px;
   overflow: hidden;
 }
+
+.backdrop {
+  background-color: #011f4a66;
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+
+  transition: 0.3s;
+}
+
+.backdrop.is-hidden {
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+}

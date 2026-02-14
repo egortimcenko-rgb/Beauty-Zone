@@ -3,8 +3,8 @@
   cursor: pointer;
   text-decoration: none;
   color: var(--third-color);
-}
 
-.link:hover {
-  color: var(--second-color);
+  &:hover {
+    color: var(--second-color);
+  }
 }

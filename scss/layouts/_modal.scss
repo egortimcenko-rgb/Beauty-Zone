@@ -1,75 +1,37 @@
-.backdrop {
-  background-color: #011f4a66;
-  position: fixed;
-  inset: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-
-  transition: 0.3s;
-}
-
-.backdrop.is-hidden {
-  overflow: hidden;
-  opacity: 0;
-  visibility: hidden;
-}
-
-.modal-exit {
-  fill: var(--first-color);
-  transition: 0.6s;
-}
-
-.modal-btn-close {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  position: absolute;
-  top: 40px;
-  right: 40px;
-}
-
-.modal-btn-close:hover .modal-exit {
-  transform: rotate(360deg);
-}
-
 .modal {
   position: relative;
   background-image: url(./images/modal-bg.png);
   background-color: var(--third-color);
   border-radius: 48px;
-  width: 725px;
-  height: 681px;
+
+  width: 100%;
+  max-width: 725px;
+
+  height: 100%;
+  max-height: 681px;
+
   color: var(--first-color);
-  padding: 42px;
+  padding: 20px;
 
   overflow-y: auto;
 
   display: flex;
   justify-content: center;
   flex-direction: column;
-}
 
-.form-title {
-  font-size: 64px;
-  line-height: 1.1;
-  margin: 0 auto;
-}
+  &__exit {
+    fill: var(--first-color);
+    transition: 0.6s;
+  }
 
-.terms {
-  color: var(--fifth-color);
-  font-size: 12px;
-  max-width: 180px;
-  margin: 0 auto;
-  text-align: center;
-}
+  &__title {
+    font-size: 64px;
+    line-height: 1.1;
+    margin: 0 auto;
+  }
 
-.terms a {
-  color: var(--fifth-color);
-}
-
-.form-text {
-  font-size: 22px;
-  text-align: center;
+  &__text {
+    font-size: 22px;
+    text-align: center;
+  }
 }

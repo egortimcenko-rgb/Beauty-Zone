@@ -1,0 +1,14 @@
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+
+  &__icon {
+    transition: 0.3s;
+    fill: var(--sith-color);
+  }
+
+  &__icon:hover {
+    fill: var(--second-color);
+  }
+}

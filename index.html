@@ -9,14 +9,14 @@
   <body>
     <main>
       <section id="hero-section" class="hero-section">
-        <header>
+        <header class="header">
           <div class="container">
-            <div class="header-container">
+            <div class="header__container">
               <a href="./index.html">
                 <img src="./images/logo.svg" alt="logotype" />
               </a>
-              <nav class="header-nav">
-                <ul class="nav-menu">
+              <nav class="header__nav">
+                <ul class="header__list">
                   <li><a class="link" href="#about-section">About Us</a></li>
                   <li>
                     <a class="link" href="#advantages-section">Why us?</a>
@@ -31,17 +31,17 @@
               </nav>
               <div class="socials">
                 <a href="tel:+380960000007">
-                  <svg width="32" height="32" class="socials-icon">
+                  <svg width="32" height="32" class="socials__icon">
                     <use href="./images/icons.svg#icon-phone"></use>
                   </svg>
                 </a>
                 <a href="#">
-                  <svg width="32" height="32" class="socials-icon">
+                  <svg width="32" height="32" class="socials__icon">
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
                 <a href="#">
-                  <svg width="32" height="32" class="socials-icon">
+                  <svg width="32" height="32" class="socials__icon">
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg>
                 </a>
@@ -49,14 +49,15 @@
             </div>
           </div>
         </header>
+
         <div class="container">
           <p>Cosmetology clinic</p>
-          <h1 class="hero-title section-title">
+          <h1 class="hero-section__title section-title">
             Beauty <br />
             Zone
           </h1>
           <button type="button" class="btn modal-btn-open">Order a call</button>
-          <p class="hero-text">
+          <p class="hero-section__text">
             Sign up and get a free <br />
             consultation from our cosmetologist
           </p>
@@ -64,8 +65,8 @@
       </section>
       <section id="about-section" class="about-section">
         <div class="container">
-          <div class="about-container">
-            <div class="about-text">
+          <div class="about-section__container">
+            <div class="about-section__text">
               <h2 class="section-title">
                 Turn yourself into <br />
                 a <span> Beauty Zone! </span>
@@ -82,11 +83,11 @@
                 forever!
               </p>
             </div>
-            <div class="results">
-              <div class="before">
+            <div class="about-section__results">
+              <div class="about-section__before">
                 <img src="./images/woman-before.jpg" alt="before" />
               </div>
-              <div class="after">
+              <div class="about-section__after">
                 <img src="./images/woman-after.jpg" alt="after" />
               </div>
             </div>
@@ -95,12 +96,13 @@
       </section>
       <section id="advantages-section" class="advantages-section">
         <div class="container">
-          <h2 class="section-title centered advantages-title">
+          <h2 class="section-title centered advantages-section__title">
             Why people
             <span>choose us</span>
           </h2>
-          <ul class="advantages-list">
-            <li class="advantages-item">
+
+          <ul class="advantages-section__list">
+            <li class="advantages-section__item">
               <article class="advantages-card">
                 <svg width="50px" height="50px" class="card-icon">
                   <use href="./images/icons.svg#icon-safe"></use>
@@ -137,18 +139,23 @@
             </li>
           </ul>
         </div>
-        <img src="./images/advantages-bg.svg" alt="bg" class="advantages-bg" />
+        <img
+          src="./images/advantages-bg.svg"
+          alt="bg"
+          class="advantages-section__bg"
+        />
       </section>
+
       <section id="procedures-section" class="procedures-section">
         <div class="container">
           <h2 class="section-title centered">Our <span>procedures</span></h2>
-          <div class="procedures-container">
+          <div class="procedures-section__container">
             <button type="button" class="slider-btn">
               <svg width="16" height="16" class="slider-arrow">
                 <use href="./images/icons.svg#icon-arrow-left"></use>
               </svg>
             </button>
-            <ul class="procedures-slider">
+            <ul class="procedures-section__list">
               <li>
                 <article class="procedures-card">
                   <img
@@ -193,211 +200,199 @@
       </section>
       <section id="contacts-section" class="contacts-section">
         <div class="container">
-          <h2 class="section-title centered">How to <span>find us</span></h2>
-          <div class="contact-container">
+          <h2 class="contacts-section__title centered">
+            How to <span>find us</span>
+          </h2>
+          <div class="contacts-section__container">
             <iframe
-              class="contact-map"
+              class="contacts-section__map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.4756098574007!2d30.772648476495373!3d50.5067167833109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d97de411b701%3A0x48116b28f7f00d94!2z0YPQuy4g0KLQsNGA0LDRgdCwINCo0LXQstGH0LXQvdC60L4sIDUsINCR0YDQvtCy0LDRgNGLLCDQmtC40LXQstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCAwNzQwMA!5e0!3m2!1sru!2sua!4v1768898022516!5m2!1sru!2sua"
               style="border: 0"
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
-            <div class="contact-form">
-              <h3 class="contact-form-title">
+            <div class="contacts-section__form">
+              <h3 class="contacts-section__text">
                 Sign up for <span>free</span> and get a gift
               </h3>
-              <form name="contact-form" autocomplete="off">
-                <div class="form-item">
+              <form name="contact-form" class="form" autocomplete="off">
+                <div class="form__item">
                   <input
                     type="text"
-                    class="form-input"
+                    class="form__input"
                     name="user-name"
                     placeholder="Name"
                     required
                   />
                 </div>
-                <div class="form-item">
+                <div class="form__item">
                   <input
                     type="tel"
-                    class="form-input"
+                    class="form__input"
                     name="user-number"
                     placeholder="Phone number"
                     pattern="^\+380[1-9]{7,}"
                     required
                   />
-                  <span class="contact-number-format"
-                    >Number format: +380ххххххх</span
-                  >
                 </div>
-                <div class="form-item">
+                <div class="form__item">
                   <input
                     type="email"
-                    class="form-input"
+                    class="form__input"
                     name="user-email"
                     placeholder="Email"
                     required
                   />
                 </div>
 
-                <button type="submit" class="btn form-btn">
+                <button type="submit" class="btn form__btn">
                   Sign up for free
                 </button>
-              </form>
 
-              <p class="terms">
-                By clicking the button I agree to
-                <a href="#">the privacy policy</a>
-              </p>
+                <p class="form__terms">
+                  By clicking the button I agree to
+                  <a href="#">the privacy policy</a>
+                </p>
+              </form>
             </div>
           </div>
         </div>
       </section>
-      <footer>
-        <div class="container">
-          <div class="footer-container">
-            <div class="footer-logo">
-              <a href="#">
-                <img src="./images/logo.svg" alt="logo" />
-              </a>
-            </div>
-            <nav class="footer-nav">
-              <ul class="nav-list">
-                <li>
-                  <a class="link footer-link" href="#about-section">About Us</a>
-                </li>
-                <li>
-                  <a class="link footer-link" href="#advantages-section"
-                    >Why us?</a
-                  >
-                </li>
-                <li>
-                  <a class="link footer-link" href="#procedures-section"
-                    >Our procedures</a
-                  >
-                </li>
-                <li>
-                  <a class="link footer-link" href="#contacts-section"
-                    >Contacts</a
-                  >
-                </li>
-              </ul>
-            </nav>
-            <address class="footer-adress">
-              <ul class="adress-list">
-                <li>
-                  <a class="adress-link" href="tel:+380960000007"
-                    >+ 38 (096) 000 00 07</a
-                  >
-                </li>
-                <li>
-                  <a class="adress-link" href="mail:beautyzone@gmail.com"
-                    >beautyzone@gmail.com</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="adress-link"
-                    href="https://maps.app.goo.gl/YBw5wxRqRC4p2pFAA"
-                    target="_blank"
-                    >Україна, м. Київ, <br />
-                    вул. Тараса Шевченка 5</a
-                  >
-                </li>
-                <li>
-                  <div class="socials">
-                    <a href="tel:+380960000007">
-                      <svg
-                        width="32"
-                        height="32"
-                        class="socials-icon footer-icon"
-                      >
-                        <use href="./images/icons.svg#icon-phone"></use>
-                      </svg>
-                    </a>
-
-                    <a href="#">
-                      <svg
-                        width="32"
-                        height="32"
-                        class="socials-icon footer-icon"
-                      >
-                        <use href="./images/icons.svg#icon-facebook"></use>
-                      </svg>
-                    </a>
-
-                    <a href="#">
-                      <svg
-                        width="32"
-                        height="32"
-                        class="socials-icon footer-icon"
-                      >
-                        <use href="./images/icons.svg#icon-instagram"></use>
-                      </svg>
-                    </a>
-                  </div>
-                </li>
-              </ul>
-            </address>
-            <ul class="adress-info">
-              <li>
-                <a class="link" href="#"> Privacy policy </a>
-              </li>
-              <li><span class="terms">&copy; 2026 data protected</span></li>
-            </ul>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__container">
+          <div class="footer__logo">
+            <a href="#">
+              <img src="./images/logo.svg" alt="logo" />
+            </a>
           </div>
-        </div>
-      </footer>
 
-      <div class="backdrop is-hidden">
-        <div class="modal">
-          <button type="button" class="modal-btn-close">
-            <svg width="32" height="32" class="modal-exit">
-              <use href="./images/icons.svg#icon-close"></use>
-            </svg>
-          </button>
-          <h2 class="form-title">Request a call</h2>
-          <p class="form-text">Sign up for <span>free</span> and get a gift</p>
-          <form name="contact-form" autocomplete="off">
-            <div class="form-item">
-              <input
-                type="text"
-                class="form-input"
-                name="user-name"
-                placeholder="Name"
-                required
-              />
-            </div>
-            <div class="form-item">
-              <input
-                type="tel"
-                class="form-input"
-                name="user-number"
-                placeholder="Phone number"
-                pattern="^\+380[1-9]{7,}"
-                required
-              />
-              <span class="number-format">Number format: +380ххххххх</span>
-            </div>
-            <div class="form-item">
-              <input
-                type="email"
-                class="form-input"
-                name="user-email"
-                placeholder="Email"
-                required
-              />
-            </div>
+          <nav class="footer__nav">
+            <ul class="footer__list">
+              <li>
+                <a class="link" href="#about-section">About Us</a>
+              </li>
+              <li>
+                <a class="link" href="#advantages-section">Why us?</a>
+              </li>
+              <li>
+                <a class="link" href="#procedures-section"> Our procedures </a>
+              </li>
+              <li>
+                <a class="link" href="#contacts-section">Contacts</a>
+              </li>
+            </ul>
+          </nav>
 
-            <button type="submit" class="btn form-btn">Sign up for free</button>
-          </form>
+          <address class="address footer__address">
+            <ul class="address__list">
+              <li>
+                <a class="address__link" href="tel:+380960000007">
+                  + 38 (096) 000 00 07
+                </a>
+              </li>
+              <li>
+                <a class="address__link" href="mailto:beautyzone@gmail.com">
+                  beautyzone@gmail.com
+                </a>
+              </li>
+              <li>
+                <a
+                  class="address__link"
+                  href="https://maps.app.goo.gl/YBw5wxRqRC4p2pFAA"
+                  target="_blank"
+                >
+                  Україна, м. Київ, <br />
+                  вул. Тараса Шевченка 5
+                </a>
+              </li>
+              <li>
+                <div class="socials">
+                  <a href="tel:+380960000007">
+                    <svg width="32" height="32" class="socials__icon">
+                      <use href="./images/icons.svg#icon-phone"></use>
+                    </svg>
+                  </a>
 
-          <p class="terms">
-            By clicking the button I agree to <a href="#">the privacy policy</a>
-          </p>
+                  <a href="#">
+                    <svg width="32" height="32" class="socials__icon">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+
+                  <a href="#">
+                    <svg width="32" height="32" class="socials__icon">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </address>
+
+          <ul class="address__info">
+            <li>
+              <a class="link" href="#">Privacy policy</a>
+            </li>
+            <li>
+              <span class="form__terms">&copy; 2026 data protected</span>
+            </li>
+          </ul>
         </div>
       </div>
-    </main>
+    </footer>
+
+    <div class="backdrop is-hidden">
+      <div class="modal">
+        <button type="button" class="modal-btn-close">
+          <svg width="32" height="32" class="modal__exit">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <h2 class="modal__title">Request a call</h2>
+        <p class="modal__text">Sign up for <span>free</span> and get a gift</p>
+
+        <form name="contact-form" class="form" autocomplete="off">
+          <div class="form__item">
+            <input
+              type="text"
+              class="form__input"
+              name="user-name"
+              placeholder="Name"
+              required
+            />
+          </div>
+          <div class="form__item">
+            <input
+              type="tel"
+              class="form__input"
+              name="user-number"
+              placeholder="Phone number"
+              pattern="^\+380[1-9]{7,}"
+              required
+            />
+          </div>
+          <div class="form__item">
+            <input
+              type="email"
+              class="form__input"
+              name="user-email"
+              placeholder="Email"
+              required
+            />
+          </div>
+
+          <button type="submit" class="btn form__btn">Sign up for free</button>
+
+          <p class="form__terms">
+            By clicking the button I agree to
+            <a href="#">the privacy policy</a>
+          </p>
+        </form>
+      </div>
+    </div>
     <script src="./JS/modal.js"></script>
   </body>
 </html>
