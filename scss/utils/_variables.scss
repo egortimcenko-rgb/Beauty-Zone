@@ -8,6 +8,10 @@
   --seveth-colo: #ffd02b;
 }
 
+$bp-mobile: 360px;
+$bp-tablet: 768px;
+$bp-desktop: 1280px;
+
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;

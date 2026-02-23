@@ -1,0 +1,44 @@
+.mobile-menu {
+  position: fixed;
+  transform: translate(150%);
+  inset: 0;
+  z-index: 9;
+  padding: 26px;
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--first-color);
+
+  transition: 0.5s;
+
+  &.is-open {
+    transform: translate(0);
+  }
+
+  &__list {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  & img {
+    margin-bottom: 30px;
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__icon {
+    transition: 0.3s;
+    fill: var(--sixth-color);
+  }
+
+  &__icon:hover {
+    fill: var(--second-color);
+  }
+}

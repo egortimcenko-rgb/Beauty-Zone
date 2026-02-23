@@ -1,14 +1,33 @@
 .header {
-  background: #ffffff40;
-  height: 106px;
+  backdrop-filter: blur(5px);
+
+  padding: 32px 0;
+
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  max-height: 80px;
+
+  @media screen and (max-width: $bp-desktop) {
+    backdrop-filter: none;
+  }
 
   &__container {
     display: flex;
-    gap: 240px;
+    gap: 210px;
+
+    @media screen and (max-width: $bp-desktop) {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   &__nav {
     flex-grow: 1;
+
+    @media screen and (max-width: $bp-desktop) {
+      display: none;
+    }
   }
 
   &__list {
@@ -17,5 +36,36 @@
     justify-content: space-around;
     align-items: center;
     padding: 0;
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+
+    @media screen and (max-width: $bp-desktop) {
+      display: none;
+    }
+  }
+
+  &__icon {
+    transition: 0.3s;
+    fill: var(--sixth-color);
+  }
+
+  &__icon:hover {
+    fill: var(--second-color);
+  }
+
+  &__burger {
+    display: none;
+
+    background-color: transparent;
+    border: none;
+    fill: var(--first-color);
+
+    @media screen and (max-width: $bp-desktop) {
+      display: block;
+    }
   }
 }

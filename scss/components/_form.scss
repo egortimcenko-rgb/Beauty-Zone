@@ -1,5 +1,7 @@
 .form {
   position: relative;
+  width: 100%;
+  max-width: 400px;
   margin: 0 auto;
 
   &:after {
@@ -8,7 +10,15 @@
     color: var(--second-color);
     position: absolute;
     top: 136px;
-    left: 11px;
+    left: 20px;
+
+    @media screen and (max-width: $bp-tablet) {
+      left: 60px;
+    }
+
+    @media screen and (max-width: 447px) {
+      left: 20px;
+    }
   }
 
   &__item {
@@ -18,7 +28,8 @@
   &__input {
     display: block;
     margin: 0 auto;
-    width: 310px;
+    width: 100%;
+    max-width: 310px;
 
     border: 2px solid var(--fourth-color);
     border-radius: 48px;
@@ -26,6 +37,10 @@
 
     background-color: transparent;
     color: var(--first-color);
+
+    @media screen and (max-width: $bp-tablet) {
+      max-width: 240px;
+    }
   }
 
   &__input:focus {

@@ -1,12 +1,35 @@
 .about-section {
   background-color: transparent;
   position: relative;
+  padding: 100px 0;
+
+  @media screen and (max-width: $bp-desktop) {
+    &__text::after {
+      content: "";
+      background-image: url(../images/first-star.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 64px;
+      height: 64px;
+      position: absolute;
+      bottom: -50px;
+      right: 30px;
+    }
+  }
+
+  @media screen and (max-width: $bp-desktop) {
+    padding: 20px 0;
+  }
 
   &__text {
     max-width: 710px;
     line-height: 1.7;
 
     margin-top: 50px;
+
+    @media screen and (max-width: $bp-desktop) {
+      position: relative;
+    }
   }
 
   &__before img,
@@ -62,6 +85,9 @@
     flex-direction: column;
     gap: 40px;
     position: relative;
+    @media screen and (max-width: $bp-desktop) {
+      display: none;
+    }
   }
 
   &__before {

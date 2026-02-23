@@ -7,6 +7,8 @@
   background-position: center;
   position: relative;
 
+  padding: 56px 0;
+
   & ul {
     margin: 0;
     padding: 0;
@@ -22,10 +24,23 @@
     z-index: 1;
     bottom: 0;
     right: 0;
+
+    @media screen and (max-width: $bp-tablet) {
+      display: none;
+    }
   }
 
   &__container {
     display: flex;
+
+    @media screen and (max-width: $bp-desktop) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      gap: 20px;
+    }
   }
 
   &__list {
@@ -43,5 +58,38 @@
   &__address,
   &__info {
     flex-grow: 1;
+  }
+
+  &__address {
+    @media screen and (max-width: $bp-tablet) {
+      display: none;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    @media screen and (max-width: $bp-desktop) {
+      justify-content: center;
+    }
+  }
+
+  &__icon {
+    transition: 0.3s;
+    fill: var(--first-color);
+  }
+
+  &__icon:hover {
+    fill: var(--second-color);
+  }
+
+  &__socials.mobile {
+    display: none;
+
+    @media screen and (max-width: $bp-tablet) {
+      display: flex;
+    }
   }
 }

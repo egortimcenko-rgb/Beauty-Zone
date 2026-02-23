@@ -19,15 +19,25 @@
   justify-content: center;
   flex-direction: column;
 
-  &__exit {
-    fill: var(--first-color);
-    transition: 0.6s;
+  @media screen and (max-width: $bp-tablet) {
+    border-radius: 0;
+    inset: 0;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    padding: 0;
   }
 
   &__title {
     font-size: 64px;
     line-height: 1.1;
     margin: 0 auto;
+
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 32px;
+      text-align: center;
+    }
   }
 
   &__text {

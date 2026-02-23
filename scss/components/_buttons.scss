@@ -5,6 +5,7 @@
   border-radius: 32px;
   color: var(--first-color);
   cursor: pointer;
+  display: block;
 
   transition: 0.3s;
 }
@@ -32,6 +33,10 @@
   fill: var(--sith-color);
 
   transition: 0.3s;
+
+  @media screen and (max-width: 525px) {
+    display: none;
+  }
 }
 
 .slider-btn:hover {
@@ -41,15 +46,29 @@
 
 // Modal
 
-.modal-btn-close {
+.close-btn {
   background-color: transparent;
   border: none;
   cursor: pointer;
   position: absolute;
   top: 40px;
   right: 40px;
-}
 
-.modal-btn-close:hover .modal__exit {
-  transform: rotate(180deg);
+  @media screen and (max-width: $bp-desktop) {
+    top: 20px;
+    right: 20px;
+  }
+
+  &:hover &__icon {
+    transform: rotate(180deg);
+  }
+
+  &__icon {
+    fill: var(--first-color);
+    transition: 0.6s;
+  }
+
+  &__icon.menu {
+    fill: var(--third-color);
+  }
 }

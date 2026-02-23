@@ -7,9 +7,10 @@
   }
 
   &__list {
-    display: flex;
-    justify-content: center;
-    gap: 16px;
     padding: 0;
   }
+}
+
+.swiper-container {
+  overflow: hidden;
 }

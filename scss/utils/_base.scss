@@ -4,10 +4,12 @@ body {
 }
 
 .container {
-  width: 100%;
-  max-width: 1240px;
   margin: 0 auto;
-  padding: 32px 0 56px 0;
+  padding: 0 100px;
+
+  @media screen and (max-width: $bp-desktop) {
+    padding: 0 20px;
+  }
 }
 
 .section-title {
@@ -16,6 +18,10 @@ body {
   margin-top: 0;
 
   line-height: 1.2;
+
+  @media screen and (max-width: $bp-desktop) {
+    font-size: 32px;
+  }
 }
 
 .section-title.centered {
